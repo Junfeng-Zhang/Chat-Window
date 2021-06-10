@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font链接引入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- CSS引入 -->
+    <title>在线聊天</title>
+</head>
+<body>
+
+    <section>
+        <h1>一起聊天吧!</h1>
+        <p>点击右侧按钮开始</p>
+
+        <button class='chat-btn'> <!-- 聊天按钮 -->
+            <i class="material-icons"> comment </i> 
+        </button>
+
+        <div class="chat-popup">
+            <div class="badge">1</div> <!-- 消息显示 -->
+            <div class="chat-area"> <!-- 聊天内容区 -->
+                <div class="incoming-msg">
+                    <img src="images/iron.jpg" class="avatar" alt="">
+                    <span class='msg'> 你好,来聊会天吧!</span>
+                </div>
+            </div>
+
+            <div class="input-area"> <!-- 消息输入框 -->
+                <input type="text">
+                <button id="emoji-btn"> &#127773;</button> <!-- 表情符按钮 -->
+                <button class="submit"> <i class="material-icons"> send</i></button> <!-- 信息发送按钮 -->
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script> <!-- 表情链接引入 -->
+    <script src="script.js"></script> <!-- JS引入 -->
+
+</body>
+</html>
